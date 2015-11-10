@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="140" id="KGk-i7-Jjw" customClass="MusicCell">
+            <rect key="frame" x="0.0" y="0.0" width="376" height="140"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="376" height="139"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Lot-7F-zih">
+                        <rect key="frame" x="10" y="10" width="119" height="119"/>
+                        <color key="backgroundColor" red="0.019607843140000001" green="1" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="Lot-7F-zih" secondAttribute="height" multiplier="1:1" id="6Vw-9n-HUJ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="songName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gKA-BO-ODt">
+                        <rect key="frame" x="176" y="10" width="116" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="personName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Rdw-qB-9fE">
+                        <rect key="frame" x="176" y="108" width="98" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Lot-7F-zih" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="1eq-cm-bS9"/>
+                    <constraint firstItem="Rdw-qB-9fE" firstAttribute="leading" secondItem="Lot-7F-zih" secondAttribute="trailing" constant="82" id="5zg-se-HxC"/>
+                    <constraint firstItem="gKA-BO-ODt" firstAttribute="top" secondItem="Lot-7F-zih" secondAttribute="top" id="J1c-9Q-s8c"/>
+                    <constraint firstItem="gKA-BO-ODt" firstAttribute="leading" secondItem="Lot-7F-zih" secondAttribute="trailing" constant="82" id="Kpx-zw-qPJ"/>
+                    <constraint firstAttribute="bottom" secondItem="Lot-7F-zih" secondAttribute="bottom" constant="10" id="dI4-S6-0p6"/>
+                    <constraint firstItem="Lot-7F-zih" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dxq-Yr-JfI"/>
+                    <constraint firstItem="Rdw-qB-9fE" firstAttribute="bottom" secondItem="Lot-7F-zih" secondAttribute="bottom" id="uS4-wq-xno"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imgView" destination="Lot-7F-zih" id="tSD-gt-Q1R"/>
+                <outlet property="personName" destination="Rdw-qB-9fE" id="zPT-J5-7C5"/>
+                <outlet property="songName" destination="gKA-BO-ODt" id="UpT-Ry-6x5"/>
+            </connections>
+            <point key="canvasLocation" x="74" y="336"/>
+        </tableViewCell>
+    </objects>
+</document>

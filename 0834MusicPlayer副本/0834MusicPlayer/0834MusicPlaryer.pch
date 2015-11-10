@@ -1,0 +1,18 @@
+//
+//  0834MusicPlaryer.pch
+//  0834MusicPlayer
+//
+//  Created by lanou3g on 15/11/4.
+//  Copyright © 2015年 lanou3g. All rights reserved.
+//
+
+#ifndef _834MusicPlaryer_pch
+#define _834MusicPlaryer_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#import "URLS.h"
+
+
+#endif /* _834MusicPlaryer_pch */
